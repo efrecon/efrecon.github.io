@@ -92,9 +92,16 @@ author:
   email: efrecon@gmail.com
   twitter: efrecon
   links:
-    - title: 
-      url:
-      icon:
+    - title: Twitter
+      url: https://twitter.com/efrecon
+      icon: fab fa-twitter-square
+    - title: GitHub
+      url: https://github.com/efrecon
+      icon: fab fa-github-square
+    - title: BitBucket
+      url: https://bitbucket.com/efrecon
+      icon: fab fa-bitbucket-square
+      
 
 # Footer Links
 footer_links:
@@ -103,4 +110,10 @@ footer_links:
     icon: fas fa-rss-square
   - title: Twitter
     url: https://twitter.com/efrecon
-    icon: fab fa-twitter
+    icon: fab fa-twitter-square
+  - title: GitHub
+    url: https://github.com/efrecon
+    icon: fab fa-github-square
+  - title: BitBucket
+    url: https://bitbucket.com/efrecon
+    icon: fab fa-bitbucket-square
