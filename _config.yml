@@ -103,4 +103,4 @@ footer_links:
     icon: fas fa-rss-square
   - title: Twitter
     url: https://twitter.com/efrecon
-    icon: fas fa-twitter-square
+    icon: fab fa-twitter
