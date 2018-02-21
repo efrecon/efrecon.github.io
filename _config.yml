@@ -88,11 +88,11 @@ defaults:
 # Site Author
 author:
   name: Emmanuel Frecon
-  picture:
+  picture: "/images/avatar.jpg"
   email: efrecon@gmail.com
   twitter: efrecon
   links:
-    - title:
+    - title: 
       url:
       icon:
 
@@ -101,3 +101,6 @@ footer_links:
   - title: Feed
     url: atom.xml
     icon: fas fa-rss-square
+  - title: Twitter
+    url: https://twitter.com/efrecon
+    icon: fas fa-twitter-square
