@@ -20,7 +20,7 @@ title: "Emmanuel Frecon's blog"
 description: "Adventures in Docker"
 baseurl: "/" # the subpath of your site, e.g. "/blog"
 url: # https://efrecon.github.io
-logo: # path of site logo, e.g. "/images/logo.png"
+logo: "https://avatars.githubusercontent.com/u/9443924?s=164" # path of site logo, e.g. "/images/logo.png"
 date_format: "%Y-%m-%d"
 read_time: true
 words_per_minute: 200
