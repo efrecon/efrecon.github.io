@@ -99,8 +99,8 @@ author:
       url: https://github.com/efrecon
       icon: fab fa-github-square
     - title: BitBucket
-      url: https://bitbucket.com/efrecon
-      icon: fab fa-bitbucket-square
+      url: https://bitbucket.org/efrecon
+      icon: fab fa-bitbucket
       
 
 # Footer Links
@@ -115,5 +115,5 @@ footer_links:
     url: https://github.com/efrecon
     icon: fab fa-github-square
   - title: BitBucket
-    url: https://bitbucket.com/efrecon
-    icon: fab fa-bitbucket-square
+    url: https://bitbucket.org/efrecon
+    icon: fab fa-bitbucket
