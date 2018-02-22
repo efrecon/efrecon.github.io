@@ -23,7 +23,7 @@ url: # https://efrecon.github.io
 logo: "/images/logo.png" # path of site logo, e.g. "/images/logo.png"
 date_format: "%Y-%m-%d"
 read_time: true
-words_per_minute: 200
+words_per_minute: 150
 mathjax: false
 google_fonts:
   - name: "Source Sans Pro"
@@ -47,15 +47,15 @@ feed:
   path: atom.xml
 
 # Pagination - https://jekyllrb.com/docs/pagination/
-# paginate: 10
-# paginate_path: /page:num/
+paginate: 10
+paginate_path: /page:num/
 
 # Search
-search_full_content: false # can have performance implications for large sites
+search_full_content: true
 
 # Taxonomoy pages
-# category_archive_path: "/categories/#"
-# tag_archive_path: "/tags/#"
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
