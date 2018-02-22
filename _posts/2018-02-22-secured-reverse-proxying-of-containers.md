@@ -16,17 +16,17 @@ container implies writing simple
 
 In most projects, you will be making use of the
 [proxy](https://caddyserver.com/docs/proxy) directive to provide a single
-entrypoint on 443 and reroute access to various containers, implementing various
-services of your architecture. As the project grows, so will the number of
-containers and restart will occur. As good Caddy is, it still only takes a
-snapshots of the running containers when it starts. This means that managing
+entrypoint on 443 and reroute access to various containers, implementing the
+various services of your architecture. As the project grows, so will the number
+of containers and restarts will occur. As good Caddy is, it still only takes a
+snapshot of the running containers when it starts. This means that managing
 dependencies between all those containers will easily start to get more complex.
 
 [caddy-gen](https://github.com/wemake-services/caddy-gen) relieves from part of
 this complexity by watching containers that are present on the host and,
-provided that they have setup on a number of labels, will automatically generate
-a configuration file in order to proxy those containers. The implementation is
-simple and builds upon the ideas of
+provided that they have setup a number of labels, will automatically
+(re-)generate a configuration file in order to proxy those containers. The
+implementation is simple and builds upon the ideas of
 [nginx-proxy](https://github.com/jwilder/nginx-proxy), which does pretty much a
 similar job, but on top of nginx.
 
@@ -39,8 +39,9 @@ original implementation for some of the internals of
 * Building Caddy from scratch, throug bringing in techniques from
   [this](https://github.com/abiosoft/caddy-docker/blob/master/Dockerfile)
   Dockerfile. This makes it possible to integrate plugins in the Caddy
-  installation, and also gets rid of the ads that Caddy inserts in the headers
-  when its binary is downloaded from the release pages.
+  installation, and also gets rid of the ads that Caddy
+  [inserts](https://caddyserver.com/blog/accouncing-caddy-commercial-licenses.html)
+  in the headers when its binary is downloaded from the release pages.
   
 ## Future
 
