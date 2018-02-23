@@ -2,10 +2,16 @@
 # Remove file or replace with your own
 
 Emmanuel Frecon:
-  name: Emmanuel Frecon
+  name: Emmanuel Frécon
   picture: "/images/avatar.jpg"
   twitter: "@efrecon"
   links:
     - title: Twitter
       url: https://twitter.com/efrecon
-      icon: fab fa-twitter-square
+      icon: fab fa-twitter
+    - title: GitHub
+      url: https://github.com/efrecon
+      icon: fab fa-github
+    - title: BitBucket
+      url: https://bitbucket.org/efrecon
+      icon: fab fa-bitbucket

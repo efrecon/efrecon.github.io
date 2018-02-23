@@ -87,17 +87,17 @@ defaults:
 
 # Site Author
 author:
-  name: Emmanuel Frecon
+  name: Emmanuel Frécon
   picture: "/images/avatar.jpg"
   email: efrecon@gmail.com
   twitter: efrecon
   links:
     - title: Twitter
       url: https://twitter.com/efrecon
-      icon: fab fa-twitter-square
+      icon: fab fa-twitter
     - title: GitHub
       url: https://github.com/efrecon
-      icon: fab fa-github-square
+      icon: fab fa-github
     - title: BitBucket
       url: https://bitbucket.org/efrecon
       icon: fab fa-bitbucket
@@ -107,13 +107,13 @@ author:
 footer_links:
   - title: Feed
     url: atom.xml
-    icon: fas fa-rss-square
+    icon: fas fa-rss
   - title: Twitter
     url: https://twitter.com/efrecon
-    icon: fab fa-twitter-square
+    icon: fab fa-twitter
   - title: GitHub
     url: https://github.com/efrecon
-    icon: fab fa-github-square
+    icon: fab fa-github
   - title: BitBucket
     url: https://bitbucket.org/efrecon
     icon: fab fa-bitbucket
