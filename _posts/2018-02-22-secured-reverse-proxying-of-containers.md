@@ -3,6 +3,10 @@ layout: post
 title: "Secured Reverse Proxying of Containers"
 ---
 
+This post is about automatically reverse HTTP proxying to containers using a
+modern web server with good defaults and support for "green" certificates in the
+browser.
+
 ## Caddy
 
 [Caddy](https://caddyserver.com/) is a fantastic piece of software that is both
