@@ -36,7 +36,7 @@ original implementation for some of the internals of
 
 * The ability to have several hostnames sharing the same container proxying,
   e.g. a container serving `myapp.com` and `example.com` at the same time.
-* Building Caddy from scratch, throug bringing in techniques from
+* Building Caddy from scratch, through bringing in techniques from
   [this](https://github.com/abiosoft/caddy-docker/blob/master/Dockerfile)
   Dockerfile. This makes it possible to integrate plugins in the Caddy
   installation, and also gets rid of the ads that Caddy
@@ -53,6 +53,7 @@ usable for a wider range of use cases:
 * Support for load-balancing.
 * Quick and dirty basic authentication protection of part of the
   infrastructure/project.
+* Support for several paths, leading to several containers within a host block.
   
 Most of these features are already present in an internal project that is based
 on top of nginx, [concocter](https://github.com/efrecon/concocter) and
