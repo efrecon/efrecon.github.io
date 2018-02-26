@@ -37,6 +37,18 @@ In order for [efrecon/influx-backup](https://github.com/efrecon/influx-backup)
 to work properly, including collecting the list of databases and time-series
 that are present at the server, it is necessary to let Influx accept connections
 on port `8088`. This is best achieved through declaring the environment variable
-`INFLUXDB_BIND_ADDRESS` and setting it to `0.0.0.0:8088`. When using
-[networks](https://docs.docker.com/network/), you can arrange for your backup
-containers to access port `8088` without exposing the port on the host directly.
+`INFLUXDB_BIND_ADDRESS` when creating the influx
+[container](https://hub.docker.com/_/influxdb/) and setting it to
+`0.0.0.0:8088`. When using [networks](https://docs.docker.com/network/), you can
+arrange for your backup containers to access port `8088` without exposing the
+port on the host directly.
+
+## Future
+
+There are many ways to synchronise against the major remote storage providers.
+One promising tool is [rclone](https://rclone.org/), with a large portfolio of
+providers and some initial Docker
+[support](https://github.com/ncw/rclone/wiki/Docker-images). To the mix and when
+[GDPR](https://www.eugdpr.org/) requirements are stringent, projects such as
+[minio](https://www.minio.io/) can provide for S3-compatible solutions on
+premises.
