@@ -10,6 +10,8 @@ already found in other solutions such as [supervisord](http://supervisord.org/)
 or [docker-gen](https://github.com/jwilder/docker-gen) with enough twists for
 justifying the effort of writing yet another tool in a similar vein.
 
+## Rationale
+
 The rationale of `concocter` is to acquire variables from a number of remote of
 local sources, to dynamically generate (configuration) files with the content of
 these variables and to launch one or several processes once the files have been
@@ -28,6 +30,8 @@ together with a capable reverse-proxy server such as
 [nginx](https://www.nginx.com/) or [caddy](https://caddyserver.com/) provides
 ways to automatically proxy containers carrying "instructions" as Docker labels
 or environment variables.
+
+## Discussion and Community
 
 The [github](https://github.com/efrecon/concocter/issues) project provides
 support for issue tracking and enhancement proposals.
