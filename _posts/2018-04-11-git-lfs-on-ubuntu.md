@@ -3,8 +3,6 @@ layout: post
 title: "Git LFS on Ubuntu"
 ---
 
-# Git LFS
-
 Git [LFS] enables the storage of large files out of the main repository,
 replacing them by an index and reference to remote storage instead.
 
