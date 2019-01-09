@@ -5,9 +5,13 @@ title: "All tags of a Docker (Hub) image"
 
 The registry behind the Docker [hub] has an [API]. You can use this API to list
 out all the tags for a given existing image using code similar to the following.
-This heavily originates from the [original] to enable the use of `curl`
+This heavily deviates from the [original] to enable the use of `curl`
 (preferred) or `wget` and without using `jq`, but rather relying on standard
 linux command-line tooling.
+
+  [hub]: https://cloud.docker.com/
+  [API]: https://docs.docker.com/registry/spec/api/
+  [original]: http://www.googlinux.com/list-all-tags-of-docker-image/index.html
 
 ```bash
 # This is the image that you wish to list the tags for
@@ -46,10 +50,6 @@ done
 
 # Once here, the variable tags should contain the list of all tags for the image.
 ```
-
-  [hub]: https://cloud.docker.com/
-  [API]: https://docs.docker.com/registry/spec/api/
-  [original]: http://www.googlinux.com/list-all-tags-of-docker-image/index.html
 
 This code can be used in [hooks] to write complex build/push instructions. Such
 instructions can be used to automatically enhanced a standard image with
