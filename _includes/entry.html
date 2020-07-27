@@ -8,7 +8,7 @@
   <header class="entry-header">
     <h3 class="entry-title p-name">
       {% if entry.link %}
-        <a class="u-bookmark-of" href="{{ entry.link }}">{{ title }} <span class="link-arrow">&rarr;</span></a>
+        <a class="u-bookmark-of" href="{{ entry.link }}">{{ title }}</a> <a href="{{ entry.url | relative_url }}" rel="bookmark"><span class="link-arrow">&rarr;</span></a>
       {% else %}
         <a href="{{ entry.url | relative_url }}" rel="bookmark">{{ title }}</a>
       {% endif %}
@@ -26,14 +26,13 @@
     <div class="entry-excerpt p-summary">
       {% if entry.excerpt %}
         {{ entry.excerpt | markdownify }}
-        <div class="more-link">
-          <a href="{{ entry.url | relative_url }}">{{ site.data.text[site.locale].read_more | default: 'Read More' }}</a>
-        </div>
       {% endif %}
     </div>
   {% endunless %}
-  <footer class="entry-meta">
-    {% if site.read_time %}{% include read-time.html %}{% endif %}
-    {% if entry.date %}{% include entry-date.html %}{% endif %}
-  </footer>
+  {% if site.read_time or entry.date and page.layout != 'collection' %}
+    <footer class="entry-meta">
+      {% if site.read_time %}{% include read-time.html %}{% endif %}
+      {% if entry.date %}{% include entry-date.html %}{% endif %}
+    </footer>
+  {% endif %}
 </article>
